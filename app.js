@@ -4,8 +4,7 @@ import indexRouter from "./routes/index.js";
 import newRouter from "./routes/new.js";
 const app = e();
 
-const __filepath = "/home/damon/repos/top-message-board/app.js";
-const __dirname = path.dirname(__filepath);
+const __dirname = import.meta.dirname;
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
