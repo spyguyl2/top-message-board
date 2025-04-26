@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Mini Message Board</title>
+  </head>
+  <body>
+    <a href="/new">new message</a>
+    <% messages.map((message) => { %>
+    <div style="border: 1px red, solid; margin-bottom: 5px">
+      <p><%= message.user %></p>
+      <p><%= message.text %></p>
+      <p><%= message.added %></p>
+    </div>
+    <%}) %>
+  </body>
+</html>
