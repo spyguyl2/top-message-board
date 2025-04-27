@@ -1,3 +1,4 @@
+import "dotenv/config";
 import e from "express";
 import path from "node:path";
 import indexRouter from "./routes/index.js";
