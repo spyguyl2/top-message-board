@@ -1,7 +1,8 @@
-import messages from "../messagesDB.js";
+import { getAllMessages } from "../db/queries";
 
 const indexController = {
-  get: (req, res) => {
+  get: async (req, res) => {
+    const messages = await getAllMessages();
     res.render("index", { messages: messages });
   },
 };

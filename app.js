@@ -1,3 +1,5 @@
+//using Neon for db and render for website
+
 import "dotenv/config";
 import e from "express";
 import path from "node:path";
