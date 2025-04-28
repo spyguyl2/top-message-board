@@ -6,9 +6,9 @@
     <a href="/new">new message</a>
     <% messages.map((message) => { %>
     <div style="border: 1px red, solid; margin-bottom: 5px">
-      <p><%= message.user %></p>
+      <p><%= message.username %></p>
       <p><%= message.text %></p>
-      <p><%= message.added %></p>
+      <p><%= message.date_posted %></p>
     </div>
     <%}) %>
   </body>
