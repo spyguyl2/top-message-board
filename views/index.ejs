@@ -2,11 +2,15 @@
   <head>
     <title>Mini Message Board</title>
   </head>
+  <link rel="stylesheet" href="../styles/index.css" />
   <body>
     <a href="/new">new message</a>
     <% messages.map((message) => { %>
-    <div style="border: 1px red, solid; margin-bottom: 5px">
-      <p><%= message.username %></p>
+    <div class="message"">
+      <div class="messageHeading">
+
+        <h3><%= message.username %></h3>
+      </div>
       <p><%= message.text %></p>
       <p><%= message.date_posted %></p>
     </div>

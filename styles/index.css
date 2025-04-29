@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(26, 26, 71);
+  color: bisque;
+  display: flex;
+  gap: 10px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 7rem;
+  min-width: 3rem;
+}
+
+.messageHeading {
+  min-height: 0.8rem;
+  font-style: italic;
+  color: cornsilk;
+}
