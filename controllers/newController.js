@@ -8,7 +8,7 @@ const newController = {
     const message = {
       username: req.body.username,
       text: req.body.text,
-      date_posted: new Date(),
+      date_posted: new Date().toString(),
     };
 
     insertMessage(message);
