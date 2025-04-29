@@ -1,4 +1,4 @@
-import { insertMessage } from "../db/queries";
+import { insertMessage } from "../db/queries.js";
 
 const newController = {
   get: (req, res) => {
