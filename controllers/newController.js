@@ -1,13 +1,17 @@
+import { insertMessage } from "../db/queries";
+
 const newController = {
   get: (req, res) => {
     res.render("form");
   },
   post: (req, res) => {
-    messages.push({
+    const message = {
+      username: req.body.username,
       text: req.body.text,
-      user: req.body.user,
-      added: new Date(),
-    });
+      date_posted: new Date(),
+    };
+
+    insertMessage(message);
     res.redirect("/");
   },
 };
