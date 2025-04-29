@@ -7,7 +7,7 @@ const getAllMessages = async () => {
 
 const insertMessage = async (message) => {
   pool.query(
-    `INSERT INTO messages (username, text, date_posted) VALUES (${message.username}, ${message.text})`
+    `INSERT INTO messages (username, text) VALUES (${message.username}, ${message.text})`
   );
 };
 
