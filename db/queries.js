@@ -7,7 +7,7 @@ const getAllMessages = async () => {
 
 const insertMessage = async (message) => {
   const query = "INSERT INTO messages (username, text) VALUES ($1, $2)";
-  pool.query(query, message.username, message.text);
+  pool.query(query, [message.username, message.text]);
 };
 
 export { getAllMessages, insertMessage };
