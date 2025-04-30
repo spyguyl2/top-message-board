@@ -12,7 +12,7 @@ const __dirname = import.meta.dirname;
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(e.static(path.join(__dirname, "styles")));
-
+console.log(path.join(__dirname, "styles"));
 app.use(e.urlencoded({ extended: true }));
 app.use("/", indexRouter);
 app.use("/new", newRouter);
